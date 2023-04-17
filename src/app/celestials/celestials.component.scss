@@ -1,0 +1,6 @@
+@import 'src/mixins';
+
+.celestials {
+  @include widthAndHeight(100%, 100%);
+  min-height: 50vh;
+}

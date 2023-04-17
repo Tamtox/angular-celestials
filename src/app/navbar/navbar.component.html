@@ -1,0 +1,27 @@
+<mat-toolbar color="primary" class="navbar">
+  <div class="navbar__container">
+    <div class="navbar__main">
+      <div class="title">
+        <button mat-icon-button class="icon-button" aria-label="Home">
+          <mat-icon class="icon">home</mat-icon>
+        </button>
+        <div>Celestials</div>
+      </div>
+      <div class="links">
+        <!-- <a class="link" routerLink="pets"> Pet list </a>
+        <a class="link" routerLink="add-pet"> Add new pet </a> -->
+      </div>
+    </div>
+    <div class="navbar__misc">
+      <div class="user__menu">
+        <button mat-icon-button class="icon-button" aria-label="User menu toggle" [matMenuTriggerFor]="menu">
+          <mat-icon class="icon">account_circle</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" class="user__menu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>
